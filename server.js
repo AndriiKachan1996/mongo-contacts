@@ -5,10 +5,10 @@ const app = require("./app");
 //
 // console.log(process.env);
 
-const { DB_HOSR } = process.env;
+const { DB_HOST } = process.env;
 
 mongoose
-	.connect(DB_HOSR)
+	.connect(DB_HOST)
 	.then(() => {
 		app.listen(3000);
 	})
