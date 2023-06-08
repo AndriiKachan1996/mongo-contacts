@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 //
-console.log(process.env);
+// console.log(process.env);
 
 const { DB_HOSR } = process.env;
 
