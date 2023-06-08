@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 //
+console.log(process.env);
 
-const DB_HOSR =
-	"mongodb+srv://Andrii:666999@cluster0.rpjckph.mongodb.net/my-contacts?retryWrites=true&w=majority";
+const { DB_HOSR } = process.env;
 
 mongoose
 	.connect(DB_HOSR)
